@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+</head>
+<body>
+    <h1>Add Student</h1>
+    <form action="manage_students.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <input type="hidden" name="action" value="add">
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <a href="manage_students.php?action=view">View All Students</a>
+</body>
+</html>
